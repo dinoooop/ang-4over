@@ -87,9 +87,10 @@
                                 date-set="{{start_date}}" 
                                 date-min-limit="{{start_date}}" 
                                 date-max-limit="{{end_date}}">
-                                <input class="form-control" name="mail_delivery_date" ng-model="mail_delivery_date" type="text" required>
+                                <input class="form-control" name="mail_delivery_date" ng-model="appForm.mail_delivery_date" type="text" required>
                             </datepicker>
                         </div>
+                        
 
                         <br>
                         <div ng-if="isDev">
