@@ -4,10 +4,10 @@ app.constant("appConfig", {
 app.constant("appData", {
     api4over: 'https://api.4over.com',
     coating: [
-        {key: 'PCMATT', value: 'PC Matte'},
+        {key: 'PCMATT', value: 'PC MATT'},
         {key: 'EDPCMATT', value: 'MATT/DULL FINISH'},
         {key: 'EDPCUV', value: 'UV COATING'},
-        {key: 'EDPCUVFR', value: 'Gloss UV Front'},
+        {key: 'EDPCUVFR', value: 'FULL UV FRONT ONLY'},
     ],
     size: [
         {key: 'PCMATT', value: ['4.5X12']},
