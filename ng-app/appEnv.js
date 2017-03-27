@@ -1,3 +1,3 @@
 app.service("appEnv", function () {
-    this.isDev = true;
+    this.isDev = false;
 });
