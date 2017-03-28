@@ -4,19 +4,17 @@ app.constant("appConfig", {
 app.constant("appData", {
     api4over: 'https://api.4over.com',
     coating: [
-        {key: 'PCMATT', value: 'PC MATT'},
         {key: 'EDPCMATT', value: 'MATT/DULL FINISH'},
         {key: 'EDPCUV', value: 'UV COATING'},
         {key: 'EDPCUVFR', value: 'FULL UV FRONT ONLY'},
     ],
     size: [
-        {key: 'PCMATT', value: ['4.5X12']},
         {key: 'EDPCMATT', value: ['4.5X12', '6X12', '6.5X9', '6.5X12', '8X6.5', '8.5X7']},
         {key: 'EDPCUV', value: ['4.5X12', '6X12', '6.5X9', '6.5X12', '8X6.5', '8.5X7']},
         {key: 'EDPCUVFR', value: ['4.5X12', '6X12', '6.5X9', '6.5X12', '8X6.5', '8.5X7']},
     ],
     stock: [
-        {key: '16PT', value: '16PT C2S'},
+        {key: '16PT', value: '16PT COATED COVER'},
     ],
     products: [
         {key: '1b93dbb0-5f2d-48ba-9c2d-4cb7b60f6313', value: '16PT-PCMATT-4.5X12'},
@@ -39,7 +37,7 @@ app.constant("appData", {
         {key: '8c4d8667-5884-4788-8a77-b053005bb1fb', value: '16PT-EDPCUVFR-8.5X7'},
     ],
     color: [
-        {key: '13abbda7-1d64-4f25-8bb2-c179b224825d', value: '4/4'}
+        {key: '13abbda7-1d64-4f25-8bb2-c179b224825d', value: 'Full color both sizes'}
     ],
     runsize: [
         {key: '8a3a0fd1-38ae-49a0-8736-3fedadc3dc93', value: '100'},
