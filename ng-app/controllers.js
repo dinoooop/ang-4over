@@ -34,7 +34,8 @@ app.controller('mainFormController', function ($scope, $window, appData, WebServ
 
     $scope.buttonLoader = false;
     $scope.onSubmitForm = function () {
-        // Find product UUID
+        
+        // FIND PRODUCT UUID
         if ($scope.coating == 'EDPCMATT' && $scope.size == '4.5X12') {
             $scope.name_coating = 'PCMATT';
         } else {
@@ -47,8 +48,8 @@ app.controller('mainFormController', function ($scope, $window, appData, WebServ
         if (productChosen != null) {
             $scope.product_chosen_uuid = productChosen.key;
         }
-        
-        // Redirect to map
+
+        // REDIRECT TO MAP
         $scope.buttonLoader = true;
         WebService.getData(appConst.apiRequest, {action: 'get_product_option', id: $scope.product_chosen_uuid}).success(function (response) {
             var param = "product=" + $scope.product_chosen_uuid + "&target_in_mailbox_date=" + $scope.appForm.mail_delivery_date + "&size=" + response.data.size + "&stock=" + response.data.stock + "&coating=" + response.data.coating + "&color=" + $scope.color + "&runsize=" + $scope.runsize + "&job_name=test&phone=&address=";
