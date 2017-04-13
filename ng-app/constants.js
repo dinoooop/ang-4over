@@ -18,7 +18,7 @@ app.constant("appData", {
     ],
     products: [
         {key: '1b93dbb0-5f2d-48ba-9c2d-4cb7b60f6313', value: '16PT-PCMATT-4.5X12'},
-        {key: '9083fd98-32ea-4573-b295-d35be924fdab', value: '16PT-EDPCMATT-6X12'}, // size 
+        {key: '9083fd98-32ea-4573-b295-d35be924fdab', value: '16PT-EDPCMATT-6X12'},
         {key: '068a46d4-2644-4486-8c82-a70c80f28de9', value: '16PT-EDPCMATT-6.5X9'},
         {key: 'ab7aaa0b-97db-4e0d-9ad9-9e7322d15bbd', value: '16PT-EDPCMATT-6.5X12'},
         {key: '0d2f34e2-947b-42e1-92e7-d2b9bd0eaead', value: '16PT-EDPCMATT-8X6.5'},

@@ -116,7 +116,7 @@ $signature = hash_hmac("sha256", 'POST', hash('sha256', $myPrivateKey));
                         "comments": "This is a sample payment"
                     };
 
-                    console.log(data_create_order);
+                    //console.log(data_create_order);
 
                     $.ajax({
                         url: serverData.url_create_order,
@@ -128,8 +128,10 @@ $signature = hash_hmac("sha256", 'POST', hash('sha256', $myPrivateKey));
                         },
                         dataType: 'json',
                         success: function (data) {
+                            console.log(data);
+                            console.log(data.payment_response);
                             // console.log("success result");
-                            window.location = appConst.apiBase + '/order-created.php?pid=' + data.payment_response.payment_uuid;
+                            // window.location = appConst.apiBase + '/order-created.php?pid=' + data.payment_response.payment_uuid;
                         }
                     });
                 }
