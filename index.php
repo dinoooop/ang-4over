@@ -70,13 +70,7 @@
                             <select name="color" class="form-control" id="color"  ng-model="color">
                                 <option value="{{x.key}}" ng-repeat="x in dataColor">{{x.value}}</option>
                             </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="runsize">Run size</label>
-                            <select name="runsize" class="form-control" id="runsize"  ng-model="runsize" required>
-                                <option value="{{x.key}}" ng-repeat="x in dataRunsize">{{x.value}}</option>
-                            </select>
-                        </div>
+                        </div>                       
 
                         <div class="form-group" ng-if="ready">
                             <label for="mail_delivery_date">Target in Mailbox date</label>
