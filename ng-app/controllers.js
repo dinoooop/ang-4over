@@ -52,7 +52,7 @@ app.controller('mainFormController', function ($scope, $window, appData, WebServ
         // REDIRECT TO MAP
         $scope.buttonLoader = true;
         WebService.getData(appConst.apiRequest, {action: 'get_product_option', id: $scope.product_chosen_uuid}).success(function (response) {
-            var param = "product=" + $scope.product_chosen_uuid + "&target_in_mailbox_date=" + $scope.appForm.mail_delivery_date + "&size=" + response.data.size + "&stock=" + response.data.stock + "&coating=" + response.data.coating + "&color=" + $scope.color + "&runsize=" + $scope.runsize + "&job_name=test&phone=&address=";
+            var param = "product=" + $scope.product_chosen_uuid + "&target_in_mailbox_date=" + $scope.appForm.mail_delivery_date + "&size=" + response.data.size + "&stock=" + response.data.stock + "&coating=" + response.data.coating + "&color=" + $scope.color + "&runsize=6237a36b-b046-4ef6-8fed-6cb9c22a5ece&job_name=test&phone=&address=";
             $window.location.href = appConst.apiMap + '?' + param;
         });
     }
